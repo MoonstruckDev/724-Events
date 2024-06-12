@@ -16,8 +16,11 @@ const Select = ({
   const [value, setValue] = useState();
   const [collapsed, setCollapsed] = useState(true);
   const changeValue = (newValue) => {
+    
+    // Renseignement de la nouvelle valeur filtré
     onChange(newValue);
     setValue(newValue);
+    // Inversement de la valeur actuelle de collapsed
     setCollapsed(!collapsed);
   };
   return (
